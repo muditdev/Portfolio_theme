@@ -501,9 +501,31 @@ table {
   border-spacing: 0;
 }
 
+::-moz-selection {
+  background: rgba(255, 235, 0, 0.51);
+}
+
+::selection {
+  background: rgba(255, 235, 0, 0.51);
+}
+
+.j-left {
+  text-align: left;
+  border-left: 2px solid;
+}
+
+.j-right {
+  text-align: right;
+  border-right: 2px solid;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -527,6 +549,7 @@ a {
 .about-banner {
   background-image: url(../media/images/about-me-banner.jpg);
   background-size: cover;
+  background-position: center;
   padding-top: 50px;
   height: 100%;
 }
@@ -534,14 +557,12 @@ a {
 .about-banner .logo {
   float: left;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   opacity: .65;
   letter-spacing: 8px;
   margin-left: 10px;
   -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg);
   unicode-bidi: bidi-override;
@@ -559,7 +580,7 @@ nav ul li {
 
 nav ul li a {
   font-family: "Lato", sans-serif;
-  font-size: .89em;
+  font-size: 1.3em;
   font-weight: 900;
   letter-spacing: 4px;
   opacity: .6;
@@ -585,7 +606,7 @@ nav ul li a:hover .active {
 
 .banner-content {
   text-transform: uppercase;
-  margin: 220px 0 180px 50px;
+  margin: 15% 0 10% 6%;
   font-family: "Lato", sans-serif;
 }
 
@@ -593,6 +614,8 @@ nav ul li a:hover .active {
   letter-spacing: 5px;
   font-weight: 600;
   line-height: 30px;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .banner-content h1 {
@@ -600,13 +623,13 @@ nav ul li a:hover .active {
   color: #fff;
   background: rgba(0, 0, 0, 0.8);
   display: inline-block;
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 10px;
   padding: 15px 13px 15px 20px;
 }
 
 .banner-content h2 {
-  font-size: 3em;
+  font-size: 4.5em;
   letter-spacing: 15px;
   font-weight: 900;
   color: rgba(0, 0, 0, 0.8);
@@ -614,9 +637,94 @@ nav ul li a:hover .active {
   padding: 7px 13px 15px 20px;
 }
 
+.page-title {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.page-title a {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  background: #fff;
+  display: inline-block;
+  letter-spacing: 8px;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 13px 46px;
+  box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.2);
+}
+
+section.about-content .about-me-description {
+  margin-top: 85px;
+  text-align: center;
+}
+
+section.about-content .about-me-description img {
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+section.about-content .about-me-description p {
+  margin-top: 60px;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+section.work-journey {
+  margin-top: 40px;
+}
+
+section.work-journey figure {
+  margin: 40px;
+}
+
+section.work-journey figure img {
+  width: 100px;
+}
+
+section.work-journey article.journey h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  letter-spacing: 13px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.j-detail {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+  line-height: 19px;
+}
+
+.j-detail p {
+  margin-top: 50px;
+}
+
+.j-detail p:first-child {
+  margin-top: 18px !important;
+}
+
+.j-detail.j-right {
+  padding: 0 10px 20px 0;
+}
+
+.j-detail.j-left {
+  padding: 0 0 20px 10px;
+}
+
 .footer h5 {
   letter-spacing: 3px;
-  font-size: .8em;
+  font-size: 1.2em;
 }
 
 .footer .social-links {
